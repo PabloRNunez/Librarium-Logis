@@ -1,2 +1,2 @@
 ScrollReveal().reveal('.nav-main', { delay: 250 });
-ScrollReveal().reveal('.section', { delay: 750 });
+ScrollReveal().reveal('.article', { delay: 750 });
