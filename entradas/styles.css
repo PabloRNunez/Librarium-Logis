@@ -109,6 +109,33 @@ h4 {
 }
 
 
+/*SOCIAL*/
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    src:url("OLD.ttf");
+}
+
+.enlaces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlaces a{
+    margin: 0 30px;
+    margin-bottom: 50px;
+
+}
+
+.enlaces a i {
+    font-size: 3rem;
+}
+
+
 
 /*Reducing Scale*/
 
