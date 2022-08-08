@@ -340,6 +340,10 @@ p {
     .nav-main ul li {
         padding: 40px;
     }
+
+    .titulo1{
+        font-size: 24px;
+    }
     
     .showcase{
         height: 250px;
@@ -354,5 +358,39 @@ p {
         padding-top: 18px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .nav-main ul li {
+        padding: 18px;
+    }
+    
+    .showcase{
+        height: 250px;
+    }
+
+    .primerbanner{
+        font-size: 12px;
+        height: 110px;
+    }
+
+    .primerbanner blockquote{
+        padding-top: 4px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .titulo1{
+        font-size: 20px;
+        margin-bottom: 150spx;
+    }
+
+    p{
+        font-size: 11px;
+    }
+
+    .showcase h2, .showcase p{
+        margin-bottom: 0;
     }
 }
