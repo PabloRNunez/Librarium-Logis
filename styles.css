@@ -352,6 +352,8 @@ p {
     .primerbanner{
         font-size: 12px;
         height: 110px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 
     .primerbanner blockquote{
@@ -363,7 +365,7 @@ p {
 
 @media (max-width:480px) {
     .nav-main ul li {
-        padding: 18px;
+        padding: 12px;
     }
     
     .showcase{
@@ -376,7 +378,7 @@ p {
     }
 
     .primerbanner blockquote{
-        padding-top: 4px;
+        padding-top: 13px;
         margin-left: 20px;
         margin-right: 20px;
     }
