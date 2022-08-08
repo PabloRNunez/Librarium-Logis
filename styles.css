@@ -330,14 +330,29 @@ p {
 
     .primerbanner blockquote{
         padding-top: 18px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
 }
 
-@media (max-width:518px) {
-    .nav-main ul.nav-menu {
-        margin-left: 2px;
-        margin-left: 293.5px;
-        margin-right: 293.5px;
+@media (max-width:580px) {
+    .nav-main ul li {
+        padding: 40px;
+    }
+    
+    .showcase{
+        height: 250px;
+    }
+
+    .primerbanner{
+        font-size: 12px;
+        height: 110px;
+    }
+
+    .primerbanner blockquote{
+        padding-top: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
