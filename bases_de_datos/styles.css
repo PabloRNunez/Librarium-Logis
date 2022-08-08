@@ -340,3 +340,64 @@ ul[role="tree"] {
     font-family: 'Share Tech Mono', monospace;
     font-size: 16px;
   }
+
+
+
+
+/*Phone size*/
+
+@media (max-width: 715px) {
+    
+    .nav-main ul.nav-menu{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 695px) {
+
+    .body{
+        font-size: 12px;
+    }
+
+    .nav-main{
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .nav-brand{
+        width: 80px;
+        margin: auto;
+    }
+
+    .titulo1{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .noticiario h3{
+        font-size: 15px;
+    }
+
+    .social p{
+        font-size: 24px;
+    }
+
+    .noticiario{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width:518px) {
+    .nav-main ul.nav-menu {
+        margin-left: 2px;
+    }
+}
