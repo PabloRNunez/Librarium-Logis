@@ -229,7 +229,7 @@ p {
 
 @media (max-width:518px) {
     .nav-main ul.nav-menu {
-        margin-left: 2px;
+        margin-left: 20px;
     }
 }
 
@@ -398,7 +398,7 @@ ul[role="tree"] {
 
 @media (max-width:518px) {
     .nav-main ul.nav-menu {
-        margin-left: 2px;
+        margin-left: 20px;
     }
 }
 
@@ -428,13 +428,6 @@ ul[role="tree"] {
 
 
 /*Phone size*/
-
-@media (max-width: 790px) {
-    
-    .showcase{
-        height: 350px;
-    }
-}
 
 @media (max-width: 730px) {
 
