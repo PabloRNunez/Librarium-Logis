@@ -22,6 +22,21 @@ a {
     text-decoration: none;
 }
 
+.text-link {
+    color: skyblue;
+}
+
+.fecha {
+    text-align: right;
+}
+
+iframe {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 610px;
+    height: 345px;
+}
+
 ul{
     list-style: none;
 }
@@ -32,6 +47,7 @@ ul{
 
 /*Navegación*/
 .nav-main{
+    z-index: 1;
     background-color: rgb(0, 0, 30);
     position: fixed;
     width: 100%;
@@ -44,8 +60,8 @@ ul{
 }
 
 .nav-brand{
-    width: 100px; 
-    margin-left: 55px;
+    width: 70px;
+    margin-left: 13px;
 }
 
 /*Navegación izquierda*/
@@ -66,197 +82,91 @@ ul{
     margin-left: 20px;
 }
 
+/* ARTICLE */
 
-
-
-
-/*TREE-VIEW*/
-
-.biblioteca{
+.article{
     width: 90%;
     margin: auto;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
 }
 
-ul[role="tree"] {
-    width: 90%;
+.fecha code{
+    color: white;
+}
+
+.section {
+    width: 85%;
     margin: auto;
-    padding: 0;
-    list-style: none;
-    font-size: 120%;
-  }
-  
-  ul[role="tree"] li {
-    margin-top: 20px;
-    margin-left: 30px;
-    list-style: none;
-  }
-  
-  [role="treeitem"][aria-expanded="false"] + [role="group"] {
-    display: none;
-  }
-  
-  [role="treeitem"][aria-expanded="true"] + [role="group"] {
-    display: block;
-  }
-  
-  [role="treeitem"].doc::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f15c";
-    color: gold;
-    display: inline-block;
-    padding-right: 2px;
-    padding-left: 5px;
-    vertical-align: middle;
-  }
-  
-  [role="treeitem"][aria-expanded="false"] > ul {
-    display: none;
-  }
-  
-  [role="treeitem"][aria-expanded="true"] > ul {
-    display: block;
-  }
-  
-  [role="treeitem"][aria-expanded="false"] > span::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f07b";
-    color: gold;
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    font-weight: 900;
-  }
-  
-  [role="treeitem"][aria-expanded="true"] > span::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f07c";
-    color: gold;
-    display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
-    font-weight: 900;
-  }
-  
-  [role="treeitem"],
-  [role="treeitem"] span {
-    width: 9em;
-    margin: 0;
-    padding: 0.125em;
-    display: block;
-  }
-  
-  /* disable default keyboard focus styling for treeitems
-     Keyboard focus is styled with the following CSS */
-  [role="treeitem"]:focus {
-    outline: 0;
-  }
-  
-  [role="treeitem"][aria-selected="true"] {
-    padding-left: 4px;
-    border-left: 5px solid #005a9c;
-  }
-  
-  [role="treeitem"].focus,
-  [role="treeitem"] span.focus {
-    border-color: black;
-    background-color: #222;
-  }
-  
-  [role="treeitem"].hover,
-  [role="treeitem"] span:hover {
-    padding-left: 4px;
-    background-color: #333;
-    border-left: 5px solid #ddd;
-  }
-
-  .biblioteca a{
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 16px;
-  }
-
-
-
-
-/*Phone size*/
-
-@media (max-width: 715px) {
-    
-    .nav-main ul.nav-menu{
-        margin-left: 0;
-    }
+    margin-bottom: 60px;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column;
+    text-align: justify;
 }
 
-@media (max-width: 695px) {
+h1 {
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+}
 
-    .body{
-        font-size: 12px;
-    }
+h2 {
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+    margin-top: 70px;
+}
 
-    .nav-main{
-        height: 55px;
-        font-size: 16px;
-    }
+h3 {
+    margin-top: 30px;
+}
 
-    .nav-brand{
-        width: 80px;
-        margin: auto;
-    }
-
-    .titulo1{
-        font-size: 26px;
-    }
-
-    p{
-        font-size: 14px;
-    }
-
-    .btn{
-        font-size: 15px;
-    }
-
-    .noticiario h3{
-        font-size: 15px;
-    }
-
-    .social p{
-        font-size: 24px;
-    }
-
-    .noticiario{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+h4 {
+    margin-top: 15px;
 
 }
 
-@media (max-width:518px) {
-    .nav-main ul.nav-menu {
-        margin-left: 20px;
-    }
+
+/*SOCIAL*/
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    src:url("OLD.ttf");
+}
+
+.enlaces{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enlaces a{
+    margin: 0 30px;
+    margin-bottom: 50px;
+
+}
+
+.enlaces a i {
+    font-size: 3rem;
 }
 
 
 
 
-/*Reducing Scale*/
 
-@media (max-width: 1100px ) {
-    .primerbanner{
-        margin-left: 122px;
-        margin-right: 122px;
-    }
-}
 
-@media (max-width: 830px ) {
-    .noticiario{
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .primerbanner{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-}
+
+
+
+
+
+
+
 
 
 
@@ -278,22 +188,46 @@ ul[role="tree"] {
         margin: auto;
     }
 
-    p{
+    .article h1{
+        font-size: 26px;
+    }
+
+    .article p{
         font-size: 14px;
+    }
+
+    iframe{
+
     }
 
     .btn{
         font-size: 15px;
     }
 
-    .noticiario h3{
-        font-size: 15px;
+    .social p{
+        font-size: 24px;
     }
+
+    .noticiario{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (max-width:580px) {
     .nav-main ul li {
         padding: 40px;
+    }
+
+    .article h1{
+        font-size: 24px;
+    }
+
+    iframe {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 420px;
+        height: 238px;
     }
 }
 
@@ -302,7 +236,19 @@ ul[role="tree"] {
         padding: 12px;
     }
 
-    p{
+    .article h1{
+        font-size: 20px;
+        margin-bottom: 150spx;
+    }
+
+    .article p{
         font-size: 11px;
+    }
+
+    iframe {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 305px;
+        height: 172px;
     }
 }

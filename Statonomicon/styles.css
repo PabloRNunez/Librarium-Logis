@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    color:white;
+    background-color: #070644;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23adb0a0' fill-opacity='0.4'%3E%3Cpath opacity='.3' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 18px;
+    text-align: left;
+    font-family: 'Teko', sans-serif;
+    background-attachment: fixed;
+}
+
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    margin: auto;
+}
+
+/*Navegación*/
+.nav-main{
+    z-index: 1;
+    background-color: rgb(0, 0, 30);
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-brand{
+    width: 100px; 
+    margin-left: 55px;
+}
+
+/*Navegación izquierda*/
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 60px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid gold;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+
+
+
+
+/*TREE-VIEW*/
+
+.biblioteca{
+    width: 90%;
+    margin: auto;
+}
+
+ul[role="tree"] {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    font-size: 120%;
+  }
+  
+  ul[role="tree"] li {
+    margin-top: 20px;
+    margin-left: 30px;
+    list-style: none;
+  }
+  
+  [role="treeitem"][aria-expanded="false"] + [role="group"] {
+    display: none;
+  }
+  
+  [role="treeitem"][aria-expanded="true"] + [role="group"] {
+    display: block;
+  }
+  
+  [role="treeitem"].doc::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f15c";
+    color: gold;
+    display: inline-block;
+    padding-right: 2px;
+    padding-left: 5px;
+    vertical-align: middle;
+  }
+  
+  [role="treeitem"][aria-expanded="false"] > ul {
+    display: none;
+  }
+  
+  [role="treeitem"][aria-expanded="true"] > ul {
+    display: block;
+  }
+  
+  [role="treeitem"][aria-expanded="false"] > span::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f07b";
+    color: gold;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+  }
+  
+  [role="treeitem"][aria-expanded="true"] > span::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f07c";
+    color: gold;
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+  }
+  
+  [role="treeitem"],
+  [role="treeitem"] span {
+    width: 9em;
+    margin: 0;
+    padding: 0.125em;
+    display: block;
+  }
+  
+  /* disable default keyboard focus styling for treeitems
+     Keyboard focus is styled with the following CSS */
+  [role="treeitem"]:focus {
+    outline: 0;
+  }
+  
+  [role="treeitem"][aria-selected="true"] {
+    padding-left: 4px;
+    border-left: 5px solid #005a9c;
+  }
+  
+  [role="treeitem"].focus,
+  [role="treeitem"] span.focus {
+    border-color: black;
+    background-color: #222;
+  }
+  
+  [role="treeitem"].hover,
+  [role="treeitem"] span:hover {
+    padding-left: 4px;
+    background-color: #333;
+    border-left: 5px solid #ddd;
+  }
+
+  .biblioteca a{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+  }
+
+
+
+
+/*Phone size*/
+
+@media (max-width: 715px) {
+    
+    .nav-main ul.nav-menu{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 695px) {
+
+    .body{
+        font-size: 12px;
+    }
+
+    .nav-main{
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .nav-brand{
+        width: 80px;
+        margin: auto;
+    }
+
+    .titulo1{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .noticiario h3{
+        font-size: 15px;
+    }
+
+    .social p{
+        font-size: 24px;
+    }
+
+    .noticiario{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (max-width:518px) {
+    .nav-main ul.nav-menu {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/*Reducing Scale*/
+
+@media (max-width: 1100px ) {
+    .primerbanner{
+        margin-left: 122px;
+        margin-right: 122px;
+    }
+}
+
+@media (max-width: 830px ) {
+    .noticiario{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .primerbanner{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+
+
+/*Phone size*/
+
+@media (max-width: 730px) {
+
+    .body{
+        font-size: 12px;
+    }
+
+    .nav-main{
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .nav-brand{
+        width: 80px;
+        margin: auto;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+    .noticiario h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:580px) {
+    .nav-main ul li {
+        padding: 40px;
+    }
+}
+
+@media (max-width:480px) {
+    .nav-main ul li {
+        padding: 12px;
+    }
+
+    p{
+        font-size: 11px;
+    }
+}
