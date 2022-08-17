@@ -353,6 +353,7 @@ p {
     
     .showcase{
         height: 250px;
+        padding: 20px;
     }
 
     .primerbanner{
