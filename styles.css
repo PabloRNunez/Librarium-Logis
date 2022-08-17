@@ -304,6 +304,16 @@ p {
         font-size: 26px;
     }
 
+    .btn{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .showcase{
+        height: 250px;
+        padding: 20px;
+    }
+
     p{
         font-size: 14px;
     }
@@ -344,16 +354,6 @@ p {
 
     .titulo1{
         font-size: 24px;
-    }
-
-    .btn{
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-    
-    .showcase{
-        height: 250px;
-        padding: 20px;
     }
 
     .primerbanner{
