@@ -60,8 +60,8 @@ ul{
 }
 
 .nav-brand{
-    width: 70px;
-    margin-left: 13px;
+    width: 100px;
+    margin-left: 55px;
 }
 
 /*Navegación izquierda*/
@@ -92,6 +92,11 @@ ul{
     font-family: 'Lato', sans-serif;
     text-align: justify;
 }
+
+.fecha code{
+    color: white;
+}
+
 
 .section {
     width: 85%;
@@ -152,15 +157,26 @@ h4 {
 
 
 
-/*Reducing Scale*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Phone size*/
 
-@media (max-width: 674px ) {
+@media (max-width: 730px) {
 
     .body{
         font-size: 12px;
-        
     }
 
     .nav-main{
@@ -169,25 +185,122 @@ h4 {
     }
 
     .nav-brand{
-        width: 65px;
+        width: 80px;
+        margin: auto;
     }
 
-    .titulo1{
+    .article h1{
         font-size: 26px;
     }
 
-    p{
+    .article p{
         font-size: 14px;
-        text-align: justify;
     }
 
     .btn{
         font-size: 15px;
     }
+
+    .social p{
+        font-size: 24px;
+    }
+
+    .noticiario{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
-@media (max-width:518px) {
-    .nav-main ul.nav-menu {
-        margin-left: 2px;
+@media (max-width:580px) {
+    .nav-main ul li {
+        padding: 40px;
+    }
+
+    .article h1{
+        font-size: 24px;
+    }
+
+    iframe {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 420px;
+        height: 238px;
+    }
+}
+
+@media (max-width:480px) {
+    .nav-main ul li {
+        padding: 12px;
+    }
+
+    .article h1{
+        font-size: 20px;
+        margin-bottom: 150spx;
+    }
+
+    .article p{
+        font-size: 11px;
+    }
+
+    .article p span{
+        font-size: 11px;
+    }
+
+    .article li {
+        font-size: 11px;
+        margin-left: -20px;
+    }
+
+    iframe {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 305px;
+        height: 172px;
+    }
+
+    div.input_prompt {
+        font-size: 12px;
+    }
+
+    div.input_area {
+        margin-right: 0%;
+    }
+
+    pre span {
+        font-size: 11px;
+    }
+
+    div.output_prompt {
+        font-size: 12px;
+    }
+
+    div.output_wrapper {
+        margin-right: 0%;
+    }
+
+    div.output_subarea {
+        padding: 0;
+        overflow-x: auto;
+        max-width: max-content;
+    }
+
+    div.output_area pre {
+        font-size: 11px;
+    }
+
+    div.output_text {
+        line-height: 0.45cm;
+    }
+    
+    thead {
+        font-size: 10px;
+    }
+
+    td {
+        font-size: 10px;
+    }
+
+    .dataframe tbody th {
+        font-size: 11px;
     }
 }
