@@ -22,6 +22,21 @@ a {
     text-decoration: none;
 }
 
+.text-link {
+    color: skyblue;
+}
+
+.fecha {
+    text-align: right;
+}
+
+iframe {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 610px;
+    height: 345px;
+}
+
 ul{
     list-style: none;
 }
@@ -45,7 +60,7 @@ ul{
 }
 
 .nav-brand{
-    width: 100px; 
+    width: 100px;
     margin-left: 55px;
 }
 
@@ -67,153 +82,63 @@ ul{
     margin-left: 20px;
 }
 
-/* SHOWCASE */
-hr{
-    width: 100%;
-}
+/* ARTICLE */
 
-h1, h2, h3 {
-
-    text-shadow:
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
-
-h2{
-    font-size: 32px;
-}
-
-p {
-    font-family: 'Lato', sans-serif;
-    text-shadow:
-    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.showcase{
+.article{
     width: 90%;
     margin: auto;
-    height: 550px;
-    background: url(Gallery/presentacion.png) no-repeat center top/cover;
-    border: 1px solid silver;
-    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+}
+
+.fecha code{
+    color: white;
+}
+
+
+.section {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 60px;
     display: flex;
-    border: 1px solid black;
     font-family: 'Lato', sans-serif;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    margin-bottom: 50px;
-    margin-top: 100px;
-}
-
-.titulo1{
-    font-family: 'Oswald', sans-serif;
-}
-
-.btn{
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
-    background: #262626;
-    font-family: 'Oswald', sans-serif;
-    src:url("OLD.ttf");
-    color:gold;
-    font-size: 15px;
-    border: 1px solid #ffff;
-    margin: 10px 0px;
-}
-
-.btn:hover{
-    opacity: .7;
-}
-
-.showcase h2,
-.showcase p {
-    margin-bottom: 10px;
-}
-
-/*NEWS CARDS*/
-
-.noticiario{
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-}
-
-.noticiario img{
-    width: 100%;
-    height: 150px;
-    border: 1px solid silver;
-}
-
-.noticiario h3{
-    font-size: 20px;
-    margin: 10px 0;
-}
-
-.noticiario p{
-    margin: 10px 0;
-    font-size: 15px;
-    font-weight: lighter;
     text-align: justify;
 }
 
-.noticiario a{    
-    padding: 10px 0;
-    color: gold;
-    font-weight: bold;
+h1 {
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
 }
 
-.noticiario a:hover{
-    text-decoration: underline;
+h2 {
+    font-family: 'Oswald', sans-serif;
+    height: 40px;
+    margin-top: 70px;
 }
 
-/*BANNER 1*/
+h3 {
+    margin-top: 30px;
+}
 
-.primerbanner{
-    margin: 50px;
-    width: 400;
-    height: 135px;
-    background: 
-        linear-gradient(
-            rgba(0, 0, 0, 0.527),
-            rgba(0, 0, 0, 0.5)
-        );
-    border: 1px solid silver;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-left: 243.5px;
-    margin-right: 243.5px;
-    background-color: black;
+h4 {
+    margin-top: 15px;
+
+}
+
+.tweet_left{
+    float: left;
+    padding: 2%
+}
+
+.tweet_right {
+    float: right;
+    padding: 2%
 }
 
 
-.primerbanner .quote{
-    width: 100%;
-    height: 150px;
-    color:white;
-}
-
-.primerbanner blockquote{
-    font-family: Helvetica, sans-serif;
-    font-style: italic;
-    text-align: justify;
-    margin-left: 35px;
-    margin-right: 35px;
-    padding-top: 35px;
-    text-shadow:
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-}
 
 /*SOCIAL*/
 
@@ -251,34 +176,71 @@ p {
 
 
 
-/*Reducing Scale*/
 
-@media (max-width: 1100px ) {
-    .primerbanner{
-        margin-left: 122px;
-        margin-right: 122px;
-    }
-}
 
-@media (max-width: 830px ) {
-    .noticiario{
-        grid-template-columns: repeat(2, 1fr);
-    }
 
-    .primerbanner{
-        margin-left: 60px;
-        margin-right: 60px;
-    }
-}
 
 
 
 /*Phone size*/
 
-@media (max-width: 790px) {
-    
-    .showcase{
-        height: 350px;
+@media (max-width: 1328px) {
+    .tweet_left{
+        width: 550px
+    }
+
+    .tweet_right{
+        width: 550px
+    }
+}
+
+@media (max-width: 1222px) {
+    .tweet_left{
+        width: 505px
+    }
+
+    .tweet_right{
+        width: 505px
+    }
+}
+
+@media (max-width: 1122px) {
+    .tweet_left{
+        width: 458px
+    }
+
+    .tweet_right{
+        width: 458px
+    }
+}
+
+@media (max-width : 1017px) {
+    .tweet_left{
+        width: 410px
+    }
+
+    .tweet_right{
+        width: 410px
+    }
+}
+
+@media (max-width: 911px) {
+    .tweet_left{
+        width: 363px
+    }
+
+    .tweet_right{
+        width: 363px
+    }
+}
+
+@media (max-width: 806px) {
+    .tweet_left{
+        width: 320px
+    }
+
+    .tweet_right{
+        width: 320px
     }
 }
 
@@ -298,29 +260,23 @@ p {
         margin: auto;
     }
 
-    .titulo1{
+    .article h1{
         font-size: 26px;
     }
 
-    .btn{
-        padding: 5px 10px;
-        font-size: 12px;
-    }
-    
-    .showcase{
-        height: 250px;
-        padding: 20px;
-    }
-
-    p{
+    .article p{
         font-size: 14px;
     }
 
-    .btn{
-        font-size: 15px;
+    .tweet_left{
+        width: 300px
     }
 
-    .noticiario h3{
+    .tweet_right{
+        width: 300px
+    }
+
+    .btn{
         font-size: 15px;
     }
 
@@ -332,17 +288,16 @@ p {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .primerbanner{
-        font-size: 14px;
-        height: 110px;
+}
+
+@media (max-width:666px) {
+    .tweet_left{
+        float: right
     }
 
-    .primerbanner blockquote{
-        padding-top: 18px;
-        margin-left: 40px;
-        margin-right: 40px;
+    .spacer{
+        display: none;
     }
-
 }
 
 @media (max-width:580px) {
@@ -350,21 +305,28 @@ p {
         padding: 40px;
     }
 
-    .titulo1{
+    .article h1{
         font-size: 24px;
     }
 
-    .primerbanner{
-        font-size: 12px;
-        height: 110px;
-        margin-left: 12px;
-        margin-right: 12px;
+    iframe {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 420px;
+        height: 238px;
     }
 
-    .primerbanner blockquote{
-        padding-top: 18px;
-        margin-left: 20px;
-        margin-right: 20px;
+    ul{
+        width: 90%
+        margin: auto
+    }
+
+    .tweet_left{
+        float: none
+    }
+
+    .tweet_right{
+        float: none
     }
 }
 
@@ -372,32 +334,74 @@ p {
     .nav-main ul li {
         padding: 12px;
     }
-    
-    .showcase{
-        height: 250px;
-    }
 
-    .primerbanner{
-        font-size: 12px;
-        height: 110px;
-    }
-
-    .primerbanner blockquote{
-        padding-top: 13px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .titulo1{
+    .article h1{
         font-size: 20px;
         margin-bottom: 150spx;
     }
 
-    p{
+    .article p{
         font-size: 11px;
     }
 
-    .showcase h2, .showcase p{
-        margin-bottom: 0;
+    .article p span{
+        font-size: 11px;
+    }
+
+    .article li {
+        font-size: 11px
+    }
+
+    iframe {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 305px;
+        height: 172px;
+    }
+
+    div.input_prompt {
+        font-size: 12px;
+    }
+
+    div.input_area {
+        margin-right: 0%;
+    }
+
+    pre span {
+        font-size: 11px;
+    }
+
+    div.output_prompt {
+        font-size: 12px;
+    }
+
+    div.output_wrapper {
+        margin-right: 0%;
+    }
+
+    div.output_subarea {
+        padding: 0;
+        overflow-x: auto;
+        max-width: max-content;
+    }
+
+    div.output_area pre {
+        font-size: 11px;
+    }
+
+    div.output_text {
+        line-height: 0.45cm;
+    }
+    
+    thead {
+        font-size: 10px;
+    }
+
+    td {
+        font-size: 10px;
+    }
+
+    .dataframe tbody th {
+        font-size: 11px;
     }
 }
